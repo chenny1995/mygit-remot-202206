@@ -1,0 +1,156 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <context-param>
+    <param-name>appname</param-name>
+    <param-value>MyJspAndServlet</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>MyServlet</servlet-name>
+    <servlet-class>com.cn.t2.MyServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>SecondServlet</servlet-name>
+    <servlet-class>com.cn.t2.SecondServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ThirdServlet</servlet-name>
+    <servlet-class>com.cn.t2.ThirdServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>DateServlet</servlet-name>
+    <servlet-class>com.cn.t2.DateServlet</servlet-class>
+    <init-param>
+      <param-name>uname</param-name>
+      <param-value>jack</param-value>
+    </init-param>
+    <init-param>
+      <param-name>upass</param-name>
+      <param-value>123</param-value>
+    </init-param>
+  </servlet>
+
+
+  <servlet>
+    <servlet-name>EncServlet1</servlet-name>
+    <servlet-class>com.cn.t2.EncServlet1</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>EncServlet2</servlet-name>
+  <servlet-class>com.cn.t2.EncServlet2</servlet-class>
+</servlet>
+
+  <servlet>
+    <servlet-name>AddGoodsServlet</servlet-name>
+    <servlet-class>com.cn.t3.AddGoodsServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>UpdGoodsServlet</servlet-name>
+    <servlet-class>com.cn.t3.UpdGoodsServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>DelGoodsServlet</servlet-name>
+    <servlet-class>com.cn.t3.DelGoodsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectGoodsServlet</servlet-name>
+    <servlet-class>com.cn.t3.SelectGoodsServlet</servlet-class>
+  </servlet>
+
+
+  <servlet>
+    <servlet-name>PreUpdGoodsServlet</servlet-name>
+    <servlet-class>com.cn.t3.PreUpdGoodsServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyUploadServlet</servlet-name>
+    <servlet-class>com.cn.t3.MyUploadServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyDownServlet</servlet-name>
+    <servlet-class>com.cn.t3.MyDownServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>CartServlet</servlet-name>
+    <servlet-class>com.cn.t3.CartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CartServlet</servlet-name>
+    <url-pattern>/CartServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyDownServlet</servlet-name>
+    <url-pattern>/MyDownServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyUploadServlet</servlet-name>
+    <url-pattern>/MyUploadServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>PreUpdGoodsServlet</servlet-name>
+    <url-pattern>/PreUpdGoodsServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SelectGoodsServlet</servlet-name>
+    <url-pattern>/SelectGoodsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelGoodsServlet</servlet-name>
+    <url-pattern>/DelGoodsServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>UpdGoodsServlet</servlet-name>
+    <url-pattern>/UpdGoodsServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>AddGoodsServlet</servlet-name>
+    <url-pattern>/AddGoodsServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>EncServlet2</servlet-name>
+    <url-pattern>/EncServlet2</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>EncServlet1</servlet-name>
+    <url-pattern>/EncServlet1</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>DateServlet</servlet-name>
+    <url-pattern>/DateServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ThirdServlet</servlet-name>
+    <url-pattern>/ThirdServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SecondServlet</servlet-name>
+    <url-pattern>/SecondServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyServlet</servlet-name>
+    <url-pattern>/MyServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
